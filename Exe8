@@ -1,0 +1,58 @@
+Problem #1
+
+"I have a relation ABC. 
+
+What are the sequence of commands to determine its structure?"
+
+Command Sequence:
+bq
+rel ABC
+di
+x
+
+-------------------------------------------------------------------------------------------
+
+Problem #2
+
+"I have a relation XYZ. 
+
+Its structure is noted to the right
+
+XYZ =  { file (B1) of } record
+  B1   : integer;     { block number   B1
+  Name : Char8;       { B1 name
+end;   
+What are the sequence of commands to read the first and last records of relation XYZ?"
+
+Comment: I don't think "display" command is a mandatory step to read the records after acessing a relation. It's good to check the structure first, though.
+
+Command Sequence:
+bq
+rel XYZ
+di
+re f
+re l
+x
+
+-------------------------------------------------------------------------------------------
+
+Problem #3
+
+"Continuing with relation XYZ
+
+What are the sequence of commands to read key value 10 and the next 2 records?"
+
+Comment: I don't think "display" command is a mandatory step to read the records after acessing a relation. It's good to check the structure first, though.
+
+Command Sequence:
+bq
+rel XYZ
+di
+key 10
+re k
+re n
+re n
+x
+
+
+-------------------------------------------------------------------------------------------
